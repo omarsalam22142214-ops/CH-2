@@ -17,7 +17,7 @@
             display: flex;
             flex-direction: column;
             height: 100vh;
-            overflow: hidden;
+            overflow: auto;
         }
 
         /* شريط التحكم العلوي للمشغل */
@@ -119,7 +119,7 @@
         .video-wrapper {
             position: relative;
             width: 100%;
-            flex-grow: 1;
+            height: 60vh;
             background-color: #000;
         }
 
@@ -258,7 +258,7 @@
         .s-close-btn { background-color: #c0392b; border: 1px solid #ff7675; }
 
     </style>
-</head>
+<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
 <body>
 
     <div class="player-header">
@@ -332,7 +332,7 @@
     </div>
 
     <div class="video-wrapper">
-        <iframe id="iframePlayer" src="" allowfullscreen="" sandbox="allow-scripts allow-same-origin" style="display: none;"></iframe>
+        <iframe id="iframePlayer" src="" allowfullscreen="" style="display: none;" sandbox="allow-scripts allow-same-origin"></iframe>
         <video id="videoPlayer" controls="" autoplay="" style="display: none;"></video>
     </div>
 
@@ -364,19 +364,19 @@
             <h3 style="margin-top:0">إعدادات البث المباشر</h3>
             <div class="form-group">
                 <label>اختار الزرار للتعديل أو الحذف:</label>
-                <select id="buttonSelect" onchange="loadButtonData()"><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn2">2</option><option value="btn3">2</option><option value="btn4">2</option><option value="btn_new_1775313046421">2</option><option value="btn_new_1775313087333">2</option><option value="btn_new_1775313110293">2</option><option value="btn_new_1775313127961">2</option><option value="btn_new_1775313144818">2</option><option value="btn_new_1775313162951">2</option><option value="btn_new_1775316025265">2</option><option value="btn_new_1775849171604_0">fajr 1</option><option value="btn_new_1775849171604_1">fajr 2</option><option value="btn_new_1775849171604_2">fajr 3</option><option value="btn_new_1775849171604_3">fajr 4</option><option value="btn_new_1775849171604_4">fajr 5</option><option value="btn_new_1775849171604_5">fajr 6</option><option value="btn_new_1775327957708">Fajr 1</option><option value="btn_new_1775319111214">Alw 2</option><option value="btn_new_1775398220157">live site</option><option value="btn_new_1775573604671_0">+ 1</option><option value="btn_new_1775573604671_1">+ 2</option><option value="btn_new_1775573604671_2">+ 3</option><option value="btn_new_1775594402097_0">++ 1</option><option value="btn_new_1775594402097_1">++ 2</option><option value="btn_new_1775594402097_2">++ 3</option><option value="btn_new_1775594402097_3">++ 4</option><option value="btn_new_1775594402097_4">++ 5</option><option value="btn_new_1775594402097_5">++ 6</option><option value="btn_new_1775594402097_6">++ 7</option><option value="btn_new_1775677720855_0"></option><option value="btn_new_1775678082819_0">2 1</option><option value="btn_new_1775678082819_1">2 2</option><option value="btn_new_1775678082819_2">2 3</option><option value="btn_new_1775678082819_3">2 4</option><option value="btn_new_1775678082819_4">2 5</option><option value="btn_new_1775678082819_5">2 6</option><option value="btn_new_1775678082819_6">2 7</option><option value="btn_new_1775678082819_7">2 8</option><option value="btn_new_1775678082819_8">2 9</option><option value="btn_new_1775678082819_9">2 10</option></select>
+                <select id="buttonSelect" onchange="loadButtonData()" data-ddg-inputtype="unknown"><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn1">قناة 2 بس</option><option value="btn2">2</option><option value="btn3">2</option><option value="btn4">2</option><option value="btn_new_1775313046421">2</option><option value="btn_new_1775313087333">2</option><option value="btn_new_1775313110293">2</option><option value="btn_new_1775313127961">2</option><option value="btn_new_1775313144818">2</option><option value="btn_new_1775313162951">2</option><option value="btn_new_1775316025265">2</option><option value="btn_new_1775849171604_0">fajr 1</option><option value="btn_new_1775849171604_1">fajr 2</option><option value="btn_new_1775849171604_2">fajr 3</option><option value="btn_new_1775849171604_3">fajr 4</option><option value="btn_new_1775849171604_4">fajr 5</option><option value="btn_new_1775849171604_5">fajr 6</option><option value="btn_new_1775327957708">Fajr 1</option><option value="btn_new_1775319111214">Alw 2</option><option value="btn_new_1775398220157">live site</option><option value="btn_new_1775573604671_0">+ 1</option><option value="btn_new_1775573604671_1">+ 2</option><option value="btn_new_1775573604671_2">+ 3</option><option value="btn_new_1775594402097_0">++ 1</option><option value="btn_new_1775594402097_1">++ 2</option><option value="btn_new_1775594402097_2">++ 3</option><option value="btn_new_1775594402097_3">++ 4</option><option value="btn_new_1775594402097_4">++ 5</option><option value="btn_new_1775594402097_5">++ 6</option><option value="btn_new_1775594402097_6">++ 7</option><option value="btn_new_1775677720855_0"></option><option value="btn_new_1775678082819_0">2 1</option><option value="btn_new_1775678082819_1">2 2</option><option value="btn_new_1775678082819_2">2 3</option><option value="btn_new_1775678082819_3">2 4</option><option value="btn_new_1775678082819_4">2 5</option><option value="btn_new_1775678082819_5">2 6</option><option value="btn_new_1775678082819_6">2 7</option><option value="btn_new_1775678082819_7">2 8</option><option value="btn_new_1775678082819_8">2 9</option><option value="btn_new_1775678082819_9">2 10</option></select>
             </div>
             <div class="form-group">
                 <label>الاسم الجديد:</label>
-                <input type="text" id="editName">
+                <input type="text" id="editName" data-ddg-inputtype="unknown">
             </div>
             <div class="form-group">
                 <label>اللينك الجديد:</label>
-                <input type="text" id="editLink">
+                <input type="text" id="editLink" data-ddg-inputtype="unknown">
             </div>
             <div class="form-group">
                 <label>طريقة الفتح:</label>
-                <select id="editOpenTarget">
+                <select id="editOpenTarget" data-ddg-inputtype="unknown">
                     <option value="internal">داخلي (داخل المشغل)</option>
                     <option value="external">خارجي (في نافذة جديدة)</option>
                 </select>
